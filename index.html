@@ -20,7 +20,8 @@
   </head>
   <style>
     /* 設定原始標籤 */
-    * {
+    body {
+      color: #000;
       font-family: "Roboto", sans-serif;
     }
 
@@ -121,6 +122,10 @@
       background-color: #000;
     }
 
+    .text-black {
+      color: #000;
+    }
+
     .separate-line {
       width: 384px;
       border-bottom: 1px solid #000;
@@ -166,8 +171,10 @@
       font-size: 24px;
       line-height: 32px;
       margin-bottom: 28px;
-      font-weight: 500;
-      position: relative;
+      font-weight: 700;
+      font-style: italic;
+      display: flex;
+      align-items: center;
     }
 
     .list-item:last-child {
@@ -214,23 +221,26 @@
             alt=""
             class="mb-3"
           />
-          <div class="text-sub fst-italic">Joanne Chen</div>
-          <div class="text-sub fst-italic">1997/10/10</div>
-          <div class="text-sub fst-italic">
-            National Hex School Normal University
+          <div class="text-sub text-center fst-italic">
+            <h3 class="fw-bold">
+              Joanne Chen <br />
+              National Hex School Normal University <br />
+              1997/10/10<br />
+              Department of Visual Design
+            </h3>
           </div>
-          <div class="text-sub fst-italic">Department of Visual Design</div>
+          <div class="text-sub fst-italic"></div>
           <div class="separate-line my-3"></div>
           <ul class="d-flex flex-column align-items-center">
-            <li class="list-item d-flex align-items-center fst-italic">
+            <li class="list-item">
               <div class="custom-list-style me-2"></div>
               Founder of ‘’XXXD Official’’
             </li>
-            <li class="list-item d-flex align-items-center fst-italic">
+            <li class="list-item">
               <div class="custom-list-style me-2"></div>
               Graphic Designer
             </li>
-            <li class="list-item d-flex align-items-center fst-italic">
+            <li class="list-item">
               <div class="custom-list-style me-2"></div>
               Graphic Intern of Hex School
             </li>
@@ -250,9 +260,9 @@
       >
         <h2 class="mb-2">My Brand ‘’XXXD’’</h2>
         <div class="text-sub mb-4 fst-italic">Just Keep XXXD Everyday</div>
-        <h5 class="text-center mb-8">
+        <h4 class="text-center mb-8">
           2020 年創立的個人服飾品牌<br />引領叛逆少年開啟與社會對話的窗口<br />主打概念潮流T-Shirt
-        </h5>
+        </h4>
         <div class="mb-5">
           <img
             src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/brand_img1.png?raw=true"
@@ -275,10 +285,10 @@
     <div class="other">
       <div class="d-flex flex-column justify-content-center align-items-center">
         <h2 class="mb-2">Other Works</h2>
-        <h5 class="mb-7">
+        <h4 class="mb-7">
           2016-2020 年累積的作品<br />
           海報/廣告/攝影/LOGO/3D
-        </h5>
+        </h4>
         <ul class="d-flex justify-content-between mb-6">
           <li class="text-center">
             <img
